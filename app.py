@@ -35,17 +35,6 @@ st.title("Phishing Classifier")
 # Input URL
 input_url = st.text_input("Enter URL")
 
-def learn_more():
-        st.write("Hello World")
-        # if prediction == 1:  # Check prediction
-        #     content = model.generate_content(
-        #         "Generate content about phishing websites, detailing their characteristics, common tactics, and how to protect oneself from them."
-        #     )
-        # else:
-        #     content = model.generate_content(
-        #         "Generate content about legitimate websites, explaining their key features and how they ensure user safety and security."
-        #     )
-        # st.markdown(content.text)
 
 # Predict button
 if st.button("Analyse"):
@@ -59,7 +48,7 @@ if st.button("Analyse"):
     # Display prediction
     if prediction == 1:
         st.subheader("Likely a Phishing Website")
-        st.image("image_red_cross.png", width=25) 
+        st.image("image_red_cross.png", width=25)
     else:
         st.subheader("Legitimate Website")
         st.image("image_green_tick.png", width=25)
